@@ -1,0 +1,6 @@
+{% extends "base.html" %}{% block title %}Log in · StudySync AI{% endblock %}
+{% block content %}<div class="auth-wrap"><div class="auth-card"><div class="auth-icon">✦</div><p class="eyebrow">WELCOME BACK</p><h1>Good to see you.</h1><p class="text-muted">Pick up where your learning left off.</p><form method="post">{{ form.hidden_tag() }}
+<div class="mb-3">{{ form.email.label(class="form-label") }}{{ form.email(class="form-control form-control-lg", placeholder="you@example.com") }}{% for e in form.email.errors %}<small class="text-danger">{{ e }}</small>{% endfor %}</div>
+<div class="mb-3">{{ form.password.label(class="form-label") }}{{ form.password(class="form-control form-control-lg", placeholder="Your password") }}{% for e in form.password.errors %}<small class="text-danger">{{ e }}</small>{% endfor %}</div>
+<div class="form-check mb-4">{{ form.remember(class="form-check-input") }}{{ form.remember.label(class="form-check-label") }}</div>
+<button class="btn btn-primary btn-lg w-100 rounded-pill" type="submit">Log in to StudySync →</button></form><p class="auth-foot">New here? <a href="{{ url_for('register') }}">Create an account</a></p></div></div>{% endblock %}

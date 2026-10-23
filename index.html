@@ -1,0 +1,13 @@
+{% extends "base.html" %}{% block title %}StudySync AI — Study smarter{% endblock %}
+{% block content %}
+<section class="hero container">
+  <div class="hero-copy"><div class="eyebrow"><span>✦</span> YOUR PERSONAL STUDY SPACE</div>
+    <h1>Make every class<br>count <em>more.</em></h1>
+    <p class="hero-lead">Keep your attendance on track, turn your syllabus into clear study notes, and get unstuck with an AI study companion built for your learning journey.</p>
+    <div class="d-flex gap-3 flex-wrap"><a class="btn btn-primary btn-lg rounded-pill px-4" href="{{ url_for('register') }}">Build your study space ↗</a><a class="btn btn-outline-secondary btn-lg rounded-pill px-4" href="{{ url_for('login') }}">I have an account</a></div>
+    <div class="hero-proof"><span class="proof-icon">✓</span> Attendance · Notes · AI study help · Planner</div>
+  </div>
+  <div class="hero-visual"><div class="visual-glow"></div><div class="mock-window"><div class="mock-top"><span></span><span></span><span></span><small>MY LEARNING DASHBOARD</small></div><div class="mock-body"><p class="muted-small">GOOD MORNING ✦</p><h4>Your semester, in focus.</h4><div class="mock-stats"><div><small>Overall attendance</small><strong>86.4%</strong><div class="mini-bar"><i></i></div></div><div><small>Study notes saved</small><strong>24</strong><span class="tiny-pill">+5 this week</span></div></div><div class="mock-line"><span class="mock-bullet"></span><div><b>Probability & Statistics</b><small>Bayes' theorem · 10:30 AM</small></div><span class="mock-check">✓</span></div><div class="mock-line"><span class="mock-bullet lavender"></span><div><b>Revise Unit 2</b><small>AI study plan · Today</small></div><span class="mock-arrow">↗</span></div></div></div><div class="floating-card"><span>✦</span><div><b>Your notes are ready</b><small>Made from your syllabus</small></div></div></div>
+</section>
+<section class="feature-strip container"><div><span>01</span><b>Stay attendance-aware</b><small>Know exactly where you stand.</small></div><div><span>02</span><b>Turn syllabus into notes</b><small>Study resources that stay saved.</small></div><div><span>03</span><b>Learn with AI</b><small>Ask, practise, and understand.</small></div></section>
+{% endblock %}
